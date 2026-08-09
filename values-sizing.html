@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Values and Sizing - Reference</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Values and Sizing</h1>
+            <h2>What are CSS Values and Sizing?</h2>
+            <p>CSS values define what a property is set to, and sizing controls the dimensions of elements. Understanding units and sizing methods is essential for creating responsive, consistent layouts.</p>
+            <p><strong>Key principle:</strong> Choose the right unit for the job — some units are absolute, others are relative to context.</p>
+        </header>
+   
+        <a href="index.html" class="back-link">← Back to Reference</a>
+
+        <section class="detail-section">
+            <h2>Absolute Units</h2>
+            <p>Fixed units that don't change based on context.</p>
+            <div class="code-example">
+                <pre><code>.element {
+                    width: 200px;
+                    margin: 1cm;
+            }   </code></pre>
+            </div>
+                <p><strong>px</strong> — pixels, the most common absolute unit for screen display.</p>
+                <p><strong>cm, mm, in</strong> — physical units, mainly used for print media.</p>
+                <p><strong>When to use:</strong> Borders, shadows, fixed elements, and when you need precise control over layout.</p>
+        </section>
+
+        <section class="detail-section">
+            <h2>Relative Units</h2>
+            <p>Units that scale relative to something else — parent, root or viewport.</p>
+            <div class="code-example">
+            <pre><code>.element {
+                padding: 2em;
+                width: 50%;
+        }   </code></pre>
+        </div>
+        <p><strong>%</strong> — percentage, relative to the parent element's dimensions.</p>
+        <p><strong>em</strong> — relative to the font size of the element itself.</p>
+        <p><strong>rem</strong> — relative to the font size of the root element (usually &lt;html&gt;).</p>
+        <p><strong>Best practice:</strong> Use rem for font sizes, % for layouts, and em for spacing within components.</p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Viewport Units</h2>
+        <p>Units that scale relative to the size of the browser window or viewport.</p>
+        <div class="code-example">
+            <pre><code>.element {
+                height: 100vh;
+                font-size: 5vmin;
+        }   </code></pre>
+        </div>
+        <p><strong>vw</strong> — viewport width (100vw = full width)</p>
+        <p><strong>vh</strong> — viewport height (100vh = full height)</p>
+        <p><strong>vmin</strong> — smaller dimension vw or vh</p>
+        <p><strong>vmax</strong> — larger of vw or vh</p>
+        <p><strong>Best practice:</strong> Fullscreen layouts, hero sections, and when you want elements to scale with the browser window.</p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Width and Height</h2>
+        <p>Set the dimensions of an element</p>
+        <div class="code-example">
+            <pre><code>.element {
+                width: 300px;
+                height: 200px;
+        }   </code></pre>
+        </div>
+            <p><strong>Default:</strong> Block elements are 100% wide, height is auto.</p>
+            <p><strong>auto:</strong> Browser calculates the size</p>
+            <p><strong>fit-content:</strong> Size based on the element's content</p>
+        </div>
+    </section>
+
+    <section class="detail-section">
+        <h2>Min and Max</h2>
+        <p>Set boundaries for an element's dimensions</p>
+        <div class="code-example">
+            <pre><code>.element {
+                min-width: 200px;
+                max-width: 800px;
+                min-height: 100px;
+        }   </code></pre>
+        </div>
+        <p><strong>min-width / min-height:</strong> Prevents the element from shrinking below a certain size.</p>
+        <p><strong>max-width / max-height:</strong> Prevents the element from growing beyond a certain size.</p>
+        <p><strong>Common use:</strong> Use min/max to create flexible layouts that adapt to different screen sizes.</p>
+    </section>
+
+    <section class="detail-section">
+        <h2>calc() and clamp()</h2>
+        <p>Functions that let CSS do math and set responsive boundaries.</p>
+        <div class="code-example">
+            <pre><code>.element {
+                width: calc(100% - 20px);
+                font-size: clamp(1rem, 2vw, 2rem);
+        }   </code></pre>
+        <p><strong>calc()</strong> — allows mathematical expressions to determine size.</p>
+        <p><strong>clamp()</strong> — sets a value that is constrained between a defined minimum and maximum.</p>
+        <p><strong>Example:</strong> clamp(1rem, 2vw, 2rem) means the font size will be at least 1rem, scale with 2vw, but not exceed 2rem.</p>
+    </section>
+
+    <a href="index.html" class="back-link">← Back to Reference</a>
+</div>
+
+<footer>
+    <p>Made with 💙 by Atom Peter and Atom Claude ⚛️</p>
+</footer>
+
+</body>
+</html>
+
+    
