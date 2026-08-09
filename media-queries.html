@@ -15,6 +15,8 @@
 
         <a href="index.html" class="back-link">← Back to Reference</a>
 
+        <div class="detail-grid">
+
         <section class="detail-section">
             <h2>What are Media Queries?</h2>
             <p>Media queries let you apply different styles based on device characteristics like screen width, height, or orientation. They're the foundation of responsive web design, allowing your site to adapt to phones, tablets, and desktops.</p>
@@ -25,7 +27,7 @@
             <h2>Basic Syntax</h2>
             <p>Media queries use the @media rule followed by conditions.</p>
             <div class="code-example">
-                <code>@media (max-width: 768px) { /* styles here */ }</code>
+                <pre><code>@media (max-width: 768px) { /* styles here */ }</code></pre>
             </div>
             <p><strong>Example:</strong> Styles only apply when screen width is 768px or less</p>
         </section>
@@ -34,9 +36,9 @@
             <h2>Common Breakpoints</h2>
             <p>Standard screen size ranges for responsive design.</p>
             <div class="code-example">
-                <code>/* Mobile */ @media (max-width: 480px) { }</code><br>
-                <code>/* Tablet */ @media (max-width: 768px) { }</code><br>
-                <code>/* Desktop */ @media (min-width: 1024px) { }</code>
+                <pre><code>/* Mobile */ @media (max-width: 480px) { }</code></pre>
+                <pre><code>/* Tablet */ @media (max-width: 768px) { }</code></pre>
+                <pre><code>/* Desktop */ @media (min-width: 1024px) { }</code></pre>
             </div>
             <p><strong>Tip:</strong> Design mobile-first, then add styles for larger screens using min-width</p>
         </section>
@@ -45,8 +47,8 @@
             <h2>min-width vs max-width</h2>
             <p>Two approaches to responsive design.</p>
             <div class="code-example">
-                <code>@media (min-width: 768px) { /* 768px and above */ }</code><br>
-                <code>@media (max-width: 768px) { /* 768px and below */ }</code>
+                <pre><code>@media (min-width: 768px) { /* 768px and above */ }</code></pre>
+                <pre><code>@media (max-width: 768px) { /* 768px and below */ }</code></pre>
             </div>
             <p><strong>Mobile-first approach:</strong> Use min-width (styles for larger screens)</p>
             <p><strong>Desktop-first approach:</strong> Use max-width (styles for smaller screens)</p>
@@ -56,8 +58,8 @@
             <h2>Orientation</h2>
             <p>Target devices based on orientation.</p>
             <div class="code-example">
-                <code>@media (orientation: portrait) { }</code><br>
-                <code>@media (orientation: landscape) { }</code>
+                <pre><code>@media (orientation: portrait) { }</code></pre>
+                <pre><code>@media (orientation: landscape) { }</code></pre>
             </div>
             <p><strong>Use case:</strong> Adjust layout when phone is rotated</p>
         </section>
@@ -66,7 +68,7 @@
             <h2>Combining Conditions</h2>
             <p>Use 'and' to combine multiple conditions.</p>
             <div class="code-example">
-                <code>@media (min-width: 768px) and (max-width: 1024px) { }</code>
+                <pre><code>@media (min-width: 768px) and (max-width: 1024px) { }</code></pre>
             </div>
             <p><strong>Example:</strong> Styles only for tablets (between 768px and 1024px)</p>
         </section>
@@ -75,11 +77,11 @@
             <h2>Print Styles</h2>
             <p>Special styles for when users print your page.</p>
             <div class="code-example">
-                <code>@media print { /* hide navigation, adjust colors */ }</code>
+                <pre><code>@media print { /* hide navigation, adjust colors */ }</code></pre>
             </div>
             <p><strong>Common uses:</strong> Hide navigation, remove backgrounds, adjust fonts for printing</p>
         </section>
-
+        </div>
         <a href="index.html" class="back-link">← Back to Reference</a>
     </div>
 </body>

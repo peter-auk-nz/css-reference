@@ -15,6 +15,8 @@
 
         <a href="index.html" class="back-link">← Back to Reference</a>
 
+        <div class="detail-grid">
+
         <section class="detail-section">
             <h2>What are Multiple Columns?</h2>
             <p>CSS multiple columns let you flow text into multiple vertical columns, like a newspaper or magazine. This improves readability for long text passages and creates professional-looking layouts without complex grid or flexbox code.</p>
@@ -25,7 +27,7 @@
             <h2>column-count</h2>
             <p>Specifies the number of columns.</p>
             <div class="code-example">
-                <code>.text { column-count: 3; }</code>
+                <pre><code>.text { column-count: 3; }</code></pre>
             </div>
             <p><strong>Example:</strong> Divides content into 3 equal-width columns</p>
             <p><strong>Auto:</strong> Browser determines count based on column-width</p>
@@ -35,7 +37,7 @@
             <h2>column-width</h2>
             <p>Suggests an optimal width for columns.</p>
             <div class="code-example">
-                <code>.text { column-width: 200px; }</code>
+                <pre><code>.text { column-width: 200px; }</code></pre>
             </div>
             <p><strong>Not exact:</strong> Browser creates as many ~200px columns as will fit</p>
             <p><strong>Responsive:</strong> Column count adjusts automatically to viewport</p>
@@ -46,7 +48,7 @@
             <h2>columns (Shorthand)</h2>
             <p>Combines column-width and column-count.</p>
             <div class="code-example">
-                <code>.text { columns: 200px 3; }</code>
+                <pre><code>.text { columns: 200px 3; }</code></pre>
             </div>
             <p><strong>Syntax:</strong> width count (either order)</p>
             <p><strong>Example:</strong> Create 3 columns, each about 200px wide</p>
@@ -56,7 +58,7 @@
             <h2>column-gap</h2>
             <p>Sets the space between columns.</p>
             <div class="code-example">
-                <code>.text { column-gap: 2rem; }</code>
+                <pre><code>.text { column-gap: 2rem; }</code></pre>
             </div>
             <p><strong>Default:</strong> Usually 1em</p>
             <p><strong>Example:</strong> Creates 2rem gutter between columns</p>
@@ -66,7 +68,7 @@
             <h2>column-rule</h2>
             <p>Adds a dividing line between columns.</p>
             <div class="code-example">
-                <code>.text { column-rule: 1px solid #ccc; }</code>
+                <pre><code>.text { column-rule: 1px solid #ccc; }</code></pre>
             </div>
             <p><strong>Syntax:</strong> width style color (like border)</p>
             <p><strong>Styles:</strong> solid, dotted, dashed, double</p>
@@ -77,7 +79,7 @@
             <h2>column-span</h2>
             <p>Makes an element span across all columns.</p>
             <div class="code-example">
-                <code>h2 { column-span: all; }</code>
+                <pre><code>h2 { column-span: all; }</code></pre>
             </div>
             <p><strong>Values:</strong> none (default), all</p>
             <p><strong>Use:</strong> Headers, images, pull quotes that should span full width</p>
@@ -87,7 +89,7 @@
             <h2>column-fill</h2>
             <p>Controls how content is distributed across columns.</p>
             <div class="code-example">
-                <code>.text { column-fill: balance; }</code>
+                <pre><code>.text { column-fill: balance; }</code></pre>
             </div>
             <p><strong>balance (default):</strong> Distribute content evenly across columns</p>
             <p><strong>auto:</strong> Fill columns sequentially</p>
@@ -97,12 +99,12 @@
             <h2>break-inside</h2>
             <p>Prevents elements from breaking across columns.</p>
             <div class="code-example">
-                <code>img { break-inside: avoid; }</code>
+                <pre><code>img { break-inside: avoid; }</code></pre>
             </div>
             <p><strong>Use:</strong> Keep images, code blocks, or elements together in one column</p>
             <p><strong>Values:</strong> auto, avoid, avoid-page, avoid-column</p>
         </section>
-
+        </div>
         <a href="index.html" class="back-link">← Back to Reference</a>
     </div>
 </body>

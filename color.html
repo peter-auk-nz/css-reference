@@ -15,6 +15,8 @@
 
         <a href="index.html" class="back-link">← Back to Reference</a>
 
+        <div class="detail-grid">
+
         <section class="detail-section">
             <h2>What is Color in CSS?</h2>
             <p>CSS provides multiple ways to define colors for text, backgrounds, borders, and other elements. Understanding color formats and properties is fundamental to creating visually appealing designs.</p>
@@ -25,7 +27,7 @@
             <h2>Hexadecimal (Hex)</h2>
             <p>Six-digit codes representing red, green, and blue values.</p>
             <div class="code-example">
-                <code>color: #FF5733;</code>
+                <pre><code>color: #FF5733;</code></pre>
             </div>
             <p><strong>Format:</strong> #RRGGBB (00-FF for each channel)</p>
             <p><strong>Shorthand:</strong> #F57 (same as #FF5577)</p>
@@ -36,8 +38,8 @@
             <h2>RGB and RGBA</h2>
             <p>Defines color using red, green, blue values (0-255).</p>
             <div class="code-example">
-                <code>color: rgb(255, 87, 51);</code><br>
-                <code>color: rgba(255, 87, 51, 0.8);</code>
+                <pre><code>color: rgb(255, 87, 51);</code></pre>
+                <pre><code>color: rgba(255, 87, 51, 0.8);</code></pre>
             </div>
             <p><strong>RGB:</strong> Three values for red, green, blue</p>
             <p><strong>RGBA:</strong> Fourth value for opacity (0-1, where 0 = transparent, 1 = opaque)</p>
@@ -47,8 +49,8 @@
             <h2>HSL and HSLA</h2>
             <p>Defines color using hue, saturation, and lightness.</p>
             <div class="code-example">
-                <code>color: hsl(9, 100%, 60%);</code><br>
-                <code>color: hsla(9, 100%, 60%, 0.8);</code>
+                <pre><code>color: hsl(9, 100%, 60%);</code></pre>
+                <pre><code>color: hsla(9, 100%, 60%, 0.8);</code></pre>
             </div>
             <p><strong>Hue:</strong> 0-360 (color wheel position)</p>
             <p><strong>Saturation:</strong> 0-100% (color intensity)</p>
@@ -60,8 +62,8 @@
             <h2>Named Colors</h2>
             <p>CSS provides 140+ predefined color names.</p>
             <div class="code-example">
-                <code>color: red;</code><br>
-                <code>background: cornflowerblue;</code>
+                <pre><code>color: red;</code></pre>
+                <pre><code>background: cornflowerblue;</code></pre>
             </div>
             <p><strong>Examples:</strong> red, blue, green, white, black, orange, purple, pink</p>
             <p><strong>Use:</strong> Quick prototyping or when exact color doesn't matter</p>
@@ -71,9 +73,9 @@
             <h2>Color Properties</h2>
             <p>Different properties control color in different contexts.</p>
             <div class="code-example">
-                <code>color: #333; /* text color */</code><br>
-                <code>background-color: #fff; /* background */</code><br>
-                <code>border-color: blue; /* border */</code>
+                <pre><code>color: #333; /* text color */</code></pre>
+                <pre><code>background-color: #fff; /* background */</code></pre>
+                <pre><code>border-color: blue; /* border */</code></pre>
             </div>
             <p><strong>color:</strong> Sets text color</p>
             <p><strong>background-color:</strong> Sets background color</p>
@@ -84,11 +86,11 @@
             <h2>currentColor Keyword</h2>
             <p>References the current value of the color property.</p>
             <div class="code-example">
-                <code>border: 2px solid currentColor;</code>
+                <pre><code>border: 2px solid currentColor;</code></pre>
             </div>
             <p><strong>Use:</strong> Border or other properties inherit the text color automatically</p>
         </section>
-
+        </div>
         <a href="index.html" class="back-link">← Back to Reference</a>
     </div>
 </body>

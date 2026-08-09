@@ -13,7 +13,9 @@
             <p>Two-dimensional layout system for creating complex responsive designs</p>
         </header>
     
-    <a href="index.html" class="back-link">← Back to Reference</a>
+        <a href="index.html" class="back-link">← Back to Reference</a>
+
+        <div class="detail-grid">
 
         <section class="detail-section">
             <h2>What is Grid</h2>
@@ -25,7 +27,7 @@
             <h2>Creating a Grid Container</h2>
             <p>Turn any element into a grid container to control its children.</p>
             <div class="code-example">
-                <code>.container { display: grid; }</code>
+                <pre><code>.container { display: grid; }</code></pre>
             </div>
             <p><strong>Effect:</strong> Direct children become grid items</p>
         </section>
@@ -34,7 +36,7 @@
             <h2>grid-template-columns</h2>
             <p>Defines the column structure of your grid.</p>
             <div class="code-example">
-                <code>.container { grid-template-columns: 200px 200px 200px; }</code>
+                <pre><code>.container { grid-template-columns: 200px 200px 200px; }</code></pre>
             </div>
             <p><strong>Example:</strong> Creates 3 columns, each 200px wide</p>
             <p><strong>Using fr units:</strong> grid-template-columns: 1fr 1fr 1fr; (3 equal flexible columns)</p>
@@ -45,7 +47,7 @@
             <h2>grid-template-rows</h2>
             <p>Defines the row structure of your grid.</p>
             <div class="code-example">
-                <code>.container { grid-template-rows: 100px auto 100px; }</code>
+                <pre><code>.container { grid-template-rows: 100px auto 100px; }</code></pre>
             </div>
             <p><strong>Example:</strong> First row 100px, middle row auto-sized, last row 100px</p>
         </section>
@@ -54,7 +56,7 @@
             <h2>gap (grid-gap)</h2>
             <p>Creates space between grid items.</p>
             <div class="code-example">
-                <code>.container { gap: 20px; }</code>
+                <pre><code>.container { gap: 20px; }</code></pre>
             </div>
             <p><strong>Example:</strong> 20px space between all rows and columns</p>
             <p><strong>Separate control:</strong> row-gap: 20px; column-gap: 10px;</p>
@@ -64,12 +66,12 @@
             <h2>Placing Items</h2>
             <p>Control where individual items appear in the grid.</p>
             <div class="code-example">
-                <code>.item { grid-column: 1 / 3; grid-row: 1 / 2; }</code>
+                <pre><code>.item { grid-column: 1 / 3; grid-row: 1 / 2; }</code></pre>
             </div>
             <p><strong>Example:</strong> Item spans from column line 1 to 3 (2 columns wide), in row 1</p>
             <p><strong>Shorthand:</strong> grid-area: row-start / column-start / row-end / column-end;</p>
         </section>
-
+        </div>
         <a href="index.html" class="back-link">← Back to Reference</a>
     </div>
 

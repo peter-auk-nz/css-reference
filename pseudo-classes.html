@@ -14,6 +14,9 @@
         </header>
 
         <a href="index.html" class="back-link">← Back to Reference</a>
+
+        <div class="detail-grid">
+
         <section class="detail-section">
             <h2>What are Pseudo Classes?</h2>
             <p>Pseudo classes are keywords added to selectors that specify a special state of an element. They let you style elements based on user interaction, position, or other dynamic conditions.</p>
@@ -24,7 +27,7 @@
             <h2>:hover</h2>
             <p>Applies styles when the user hovers over an element with a mouse.</p>
             <div class="code-example">
-                <code>a:hover { color: red; }</code>
+                <pre><code>a:hover { color: red; }</code></pre>
             </div>
             <p><strong>Specificity:</strong> 0,1,0</p>
             <p><strong>Example:</strong> Changes link color when hovering</p>
@@ -34,7 +37,7 @@
             <h2>:focus</h2>
             <p>Applies styles when an element receives keyboard focus or is clicked.</p>
             <div class="code-example">
-                <code>input:focus { border-color: blue; }</code>
+                <pre><code>input:focus { border-color: blue; }</code></pre>
             </div>
             <p><strong>Specificity:</strong> 0,1,0</p>
             <p><strong>Example:</strong> Highlights input fields when active</p>
@@ -44,7 +47,7 @@
             <h2>:first-child</h2>
             <p>Selects an element that is the first child of its parent.</p>
             <div class="code-example">
-                <code>li:first-child { font-weight: bold; }</code>
+                <pre><code>li:first-child { font-weight: bold; }</code></pre>
             </div>
             <p><strong>Specificity:</strong> 0,1,1 (pseudo-class + element)</p>
             <p><strong>Example:</strong> Bolds the first list item</p>
@@ -54,7 +57,7 @@
             <h2>:nth-child()</h2>
             <p>Selects elements based on their position in a parent element.</p>
             <div class="code-example">
-                <code>li:nth-child(2) { background: yellow; }</code>
+                <pre><code>li:nth-child(2) { background: yellow; }</code></pre>
             </div>
             <p><strong>Specificity:</strong> 0,1,1 (pseudo-class + element)</p>
             <p><strong>Example:</strong> Highlights the second list item. Can use odd, even, or formulas like 2n</p>
@@ -64,12 +67,12 @@
             <h2>:active</h2>
             <p>Applies styles when an element is being clicked.</p>
             <div class="code-example">
-                <code>button:active { transform: scale(0.95); }</code>
+                <pre><code>button:active { transform: scale(0.95); }</code></pre>
             </div>
             <p><strong>Specificity:</strong> 0,1,0</p>
             <p><strong>Example:</strong> Shrinks button slightly when clicked</p>
         </section>
-
+        </div> <!-- End of detail-grid -->
         <a href="index.html" class="back-link">← Back to Reference</a>
     </div>
 </body>

@@ -15,6 +15,8 @@
 
         <a href="index.html" class="back-link">← Back to Reference</a>
 
+        <div class="detail-grid">
+
         <section class="detail-section">
             <h2>What is the Box Model?</h2>
             <p>Every HTML element is a rectangular box with four areas: content, padding, border, and margin. Understanding this is fundamental to CSS layout.</p>
@@ -25,7 +27,7 @@
             <h2>Content</h2>
             <p>The actual content of the element (text, images, etc.). Size controlled by width and height properties.</p>
             <div class="code-example">
-                <code>div { width: 300px; height: 200px; }</code>
+                <pre><code>div { width: 300px; height: 200px; }</code></pre>
             </div>
             <p><strong>Example:</strong> Sets the content area to 300px wide by 200px tall</p>
         </section>
@@ -34,7 +36,7 @@
             <h2>Padding</h2>
             <p>Space around the content, inside the border. Creates breathing room between content and border.</p>
             <div class="code-example">
-                <code>div { padding: 20px; }</code>
+                <pre><code>div { padding: 20px; }</code></pre>
             </div>
             <p><strong>Example:</strong> Adds 20px of space on all four sides of the content</p>
             <p><strong>Individual sides:</strong> padding-top, padding-right, padding-bottom, padding-left</p>
@@ -44,7 +46,7 @@
             <h2>Border</h2>
             <p>A line that wraps around the padding and content. Can be styled with width, style, and color.</p>
             <div class="code-example">
-                <code>div { border: 2px solid black; }</code>
+                <pre><code>div { border: 2px solid black; }</code></pre>
             </div>
             <p><strong>Example:</strong> Creates a 2px solid black border around the element</p>
             <p><strong>Properties:</strong> border-width, border-style, border-color</p>
@@ -54,7 +56,7 @@
             <h2>Margin</h2>
             <p>Space outside the border. Creates distance between elements. Margins can collapse.</p>
             <div class="code-example">
-                <code>div { margin: 30px; }</code>
+                <pre><code>div { margin: 30px; }</code></pre>
             </div>
             <p><strong>Example:</strong> Adds 30px of space outside the border on all sides</p>
             <p><strong>Individual sides:</strong> margin-top, margin-right, margin-bottom, margin-left</p>
@@ -65,12 +67,12 @@
             <h2>box-sizing Property</h2>
             <p>Controls how width and height are calculated.</p>
             <div class="code-example">
-                <code>* { box-sizing: border-box; }</code>
+                <pre><code>* { box-sizing: border-box; }</code></pre>
             </div>
             <p><strong>content-box (default):</strong> Width/height applies to content only. Padding and border are added to total size.</p>
             <p><strong>border-box (recommended):</strong> Width/height includes content, padding, and border. Much easier to work with!</p>
         </section>
-
+        </div>
         <a href="index.html" class="back-link">← Back to Reference</a>
     </div>
 </body>

@@ -15,6 +15,8 @@
 
         <a href="index.html" class="back-link">← Back to Reference</a>
 
+        <div class="detail-grid">
+
         <section class="detail-section">
             <h2>What are Text Effects?</h2>
             <p>Text effects are CSS properties that add visual enhancements to text beyond basic styling. They include shadows, underlines, outlines, and overflow handling. Used thoughtfully, text effects can emphasize content and improve visual appeal.</p>
@@ -25,7 +27,7 @@
             <h2>text-shadow</h2>
             <p>Adds shadow effects to text.</p>
             <div class="code-example">
-                <code>text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);</code>
+                <pre><code>text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);</code></pre>
             </div>
             <p><strong>Syntax:</strong> horizontal vertical blur color</p>
             <p><strong>Multiple shadows:</strong> Comma-separated list</p>
@@ -36,8 +38,8 @@
             <h2>text-decoration</h2>
             <p>Adds lines to text (underline, overline, line-through).</p>
             <div class="code-example">
-                <code>text-decoration: underline;</code><br>
-                <code>text-decoration: line-through red wavy;</code>
+                <pre><code>text-decoration: underline;</code></pre>
+                <pre><code>text-decoration: line-through red wavy;</code></pre>
             </div>
             <p><strong>Values:</strong> none, underline, overline, line-through</p>
             <p><strong>Extended syntax:</strong> line style color</p>
@@ -48,7 +50,7 @@
             <h2>text-decoration-color</h2>
             <p>Sets the color of text decoration lines.</p>
             <div class="code-example">
-                <code>text-decoration-color: red;</code>
+                <pre><code>text-decoration-color: red;</code></pre>
             </div>
             <p><strong>Use:</strong> Different color for underline than text</p>
         </section>
@@ -57,7 +59,7 @@
             <h2>text-decoration-thickness</h2>
             <p>Controls the thickness of decoration lines.</p>
             <div class="code-example">
-                <code>text-decoration-thickness: 3px;</code>
+                <pre><code>text-decoration-thickness: 3px;</code></pre>
             </div>
             <p><strong>Values:</strong> auto, from-font, length (px, em)</p>
         </section>
@@ -66,7 +68,7 @@
             <h2>text-overflow</h2>
             <p>Controls how overflowing text is displayed.</p>
             <div class="code-example">
-                <code>text-overflow: ellipsis;</code>
+                <pre><code>text-overflow: ellipsis;</code></pre>
             </div>
             <p><strong>Values:</strong> clip (cut off), ellipsis (...)</p>
             <p><strong>Requires:</strong> white-space: nowrap; and overflow: hidden;</p>
@@ -76,7 +78,7 @@
             <h2>white-space</h2>
             <p>Controls how whitespace and line breaks are handled.</p>
             <div class="code-example">
-                <code>white-space: nowrap;</code>
+                <pre><code>white-space: nowrap;</code></pre>
             </div>
             <p><strong>Values:</strong> normal, nowrap, pre, pre-wrap, pre-line</p>
             <p><strong>nowrap:</strong> Prevents text from wrapping to new line</p>
@@ -87,7 +89,7 @@
             <h2>word-wrap / overflow-wrap</h2>
             <p>Allows long words to break and wrap onto the next line.</p>
             <div class="code-example">
-                <code>overflow-wrap: break-word;</code>
+                <pre><code>overflow-wrap: break-word;</code></pre>
             </div>
             <p><strong>Values:</strong> normal, break-word, anywhere</p>
             <p><strong>Use:</strong> Prevents long URLs or words from breaking layout</p>
@@ -97,7 +99,7 @@
             <h2>text-indent</h2>
             <p>Indents the first line of text in a block.</p>
             <div class="code-example">
-                <code>text-indent: 2em;</code>
+                <pre><code>text-indent: 2em;</code></pre>
             </div>
             <p><strong>Common use:</strong> Paragraph indentation</p>
             <p><strong>Negative values:</strong> Creates hanging indent</p>
@@ -107,12 +109,12 @@
             <h2>-webkit-text-stroke</h2>
             <p>Adds an outline to text characters (webkit browsers).</p>
             <div class="code-example">
-                <code>-webkit-text-stroke: 2px black;</code>
+                <pre><code>-webkit-text-stroke: 2px black;</code></pre>
             </div>
             <p><strong>Syntax:</strong> width color</p>
             <p><strong>Note:</strong> Vendor-prefixed, may not work in all browsers</p>
         </section>
-
+        </div>
         <a href="index.html" class="back-link">← Back to Reference</a>
     </div>
 </body>

@@ -13,8 +13,11 @@
             <p>Manipulate elements in three-dimensional space</p>
         </header>
 
+        
         <a href="index.html" class="back-link">← Back to Reference</a>
 
+        <div class="detail-grid">
+            
         <section class="detail-section">
             <h2>What are 3D Transforms?</h2>
             <p>3D transforms extend 2D transforms into the third dimension, adding depth to your elements. You can rotate, translate, and scale along the Z-axis, creating perspective effects and realistic 3D animations.</p>
@@ -25,7 +28,7 @@
             <h2>perspective</h2>
             <p>Creates the illusion of depth by defining how far the viewer is from the element.</p>
             <div class="code-example">
-                <code>.parent { perspective: 1000px; }</code>
+                <pre><code>.parent { perspective: 1000px; }</code></pre>
             </div>
             <p><strong>Applied to parent:</strong> Sets perspective for child elements</p>
             <p><strong>Lower values:</strong> More dramatic perspective (closer view)</p>
@@ -37,9 +40,9 @@
             <h2>rotateX(), rotateY(), rotateZ()</h2>
             <p>Rotates elements around the X, Y, or Z axis.</p>
             <div class="code-example">
-                <code>transform: rotateX(45deg);</code><br>
-                <code>transform: rotateY(45deg);</code><br>
-                <code>transform: rotateZ(45deg);</code>
+                <pre><code>transform: rotateX(45deg);</code></pre>
+                <pre><code>transform: rotateY(45deg);</code></pre>
+                <pre><code>transform: rotateZ(45deg);</code></pre>
             </div>
             <p><strong>rotateX:</strong> Flips top/bottom (horizontal axis)</p>
             <p><strong>rotateY:</strong> Flips left/right (vertical axis)</p>
@@ -50,7 +53,7 @@
             <h2>translateZ()</h2>
             <p>Moves elements closer or further from the viewer.</p>
             <div class="code-example">
-                <code>transform: translateZ(100px);</code>
+                <pre><code>transform: translateZ(100px);</code></pre>
             </div>
             <p><strong>Positive values:</strong> Move toward viewer (larger appearance)</p>
             <p><strong>Negative values:</strong> Move away from viewer (smaller appearance)</p>
@@ -61,7 +64,7 @@
             <h2>transform-style</h2>
             <p>Determines whether children render in 3D space or are flattened.</p>
             <div class="code-example">
-                <code>.parent { transform-style: preserve-3d; }</code>
+                <pre><code>.parent { transform-style: preserve-3d; }</code></pre>
             </div>
             <p><strong>preserve-3d:</strong> Children maintain their 3D positions</p>
             <p><strong>flat (default):</strong> Children are flattened to the parent's plane</p>
@@ -72,7 +75,7 @@
             <h2>backface-visibility</h2>
             <p>Controls whether the back of a rotated element is visible.</p>
             <div class="code-example">
-                <code>backface-visibility: hidden;</code>
+                <pre><code>backface-visibility: hidden;</code></pre>
             </div>
             <p><strong>visible (default):</strong> Back face is visible (mirrored)</p>
             <p><strong>hidden:</strong> Back face is invisible</p>
@@ -83,15 +86,15 @@
             <h2>3D Cube Example Pattern</h2>
             <p>Common setup for creating 3D objects like cubes.</p>
             <div class="code-example">
-                <code>.container { perspective: 1000px; }</code><br>
-                <code>.cube { transform-style: preserve-3d; }</code><br>
-                <code>.face { position: absolute; }</code><br>
-                <code>.front { transform: translateZ(50px); }</code><br>
-                <code>.back { transform: rotateY(180deg) translateZ(50px); }</code>
+                <pre></pre><code>.container { perspective: 1000px; }</code></pre>
+                <pre><code>.cube { transform-style: preserve-3d; }</code></pre>
+                <pre><code>.face { position: absolute; }</code></pre>
+                <pre><code>.front { transform: translateZ(50px); }</code></pre>
+                <pre><code>.back { transform: rotateY(180deg) translateZ(50px); }</code></pre>
             </div>
             <p><strong>Pattern:</strong> Container with perspective, parent with preserve-3d, faces with specific transforms</p>
         </section>
-
+        </div>
         <a href="index.html" class="back-link">← Back to Reference</a>
     </div>
 </body>

@@ -15,6 +15,8 @@
 
         <a href="index.html" class="back-link">← Back to Reference</a>
 
+        <div class="detail-grid">
+
         <section class="detail-section">
             <h2>What is Flexbox?</h2>
             <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns. Items flex to fill additional space or shrink to fit smaller spaces. Perfect for navigation bars, card layouts, and centering content.</p>
@@ -25,7 +27,7 @@
             <h2>Creating a Flex Container</h2>
             <p>Turn any element into a flex container to control its children.</p>
             <div class="code-example">
-                <code>.container { display: flex; }</code>
+                <pre><code>.container { display: flex; }</code></pre>
             </div>
             <p><strong>Effect:</strong> Direct children become flex items and line up in a row by default</p>
         </section>
@@ -34,7 +36,7 @@
             <h2>flex-direction</h2>
             <p>Defines the main axis direction (row or column).</p>
             <div class="code-example">
-                <code>.container { flex-direction: row; }</code>
+                <pre><code>.container { flex-direction: row; }</code></pre>
             </div>
             <p><strong>Values:</strong> row (default, left to right), row-reverse, column (top to bottom), column-reverse</p>
         </section>
@@ -43,7 +45,7 @@
             <h2>justify-content</h2>
             <p>Aligns items along the main axis (horizontal if row, vertical if column).</p>
             <div class="code-example">
-                <code>.container { justify-content: center; }</code>
+                <pre><code>.container { justify-content: center; }</code></pre>
             </div>
             <p><strong>Common values:</strong> flex-start, center, flex-end, space-between, space-around, space-evenly</p>
         </section>
@@ -52,7 +54,7 @@
             <h2>align-items</h2>
             <p>Aligns items along the cross axis (vertical if row, horizontal if column).</p>
             <div class="code-example">
-                <code>.container { align-items: center; }</code>
+                <pre><code>.container { align-items: center; }</code></pre>
             </div>
             <p><strong>Common values:</strong> stretch (default), flex-start, center, flex-end, baseline</p>
             <p><strong>Centering trick:</strong> justify-content: center; align-items: center; (perfect center!)</p>
@@ -62,7 +64,7 @@
             <h2>flex-wrap</h2>
             <p>Controls whether items wrap onto multiple lines.</p>
             <div class="code-example">
-                <code>.container { flex-wrap: wrap; }</code>
+                <pre><code>.container { flex-wrap: wrap; }</code></pre>
             </div>
             <p><strong>Values:</strong> nowrap (default, single line), wrap (multiple lines), wrap-reverse</p>
         </section>
@@ -71,7 +73,7 @@
             <h2>gap</h2>
             <p>Creates space between flex items.</p>
             <div class="code-example">
-                <code>.container { gap: 20px; }</code>
+                <pre><code>.container { gap: 20px; }</code></pre>
             </div>
             <p><strong>Example:</strong> 20px space between all items</p>
         </section>
@@ -80,11 +82,12 @@
             <h2>flex (on items)</h2>
             <p>Controls how flex items grow and shrink. Applied to flex items, not the container.</p>
             <div class="code-example">
-                <code>.item { flex: 1; }</code>
+                <pre><code>.item { flex: 1; }</code></pre>
             </div>
             <p><strong>Example:</strong> All items grow equally to fill available space</p>
             <p><strong>Shorthand for:</strong> flex-grow, flex-shrink, flex-basis</p>
         </section>
+        </div>
 
         <a href="index.html" class="back-link">← Back to Reference</a>
     </div>

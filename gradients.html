@@ -15,6 +15,8 @@
 
         <a href="index.html" class="back-link">← Back to Reference</a>
 
+        <div class="detail-grid">
+
         <section class="detail-section">
             <h2>What are CSS Gradients?</h2>
             <p>Gradients are smooth transitions between two or more colors. They're treated as images in CSS, so they can be used anywhere an image can (backgrounds, borders, etc.). Gradients eliminate the need for image files, reducing page weight and improving load times.</p>
@@ -25,7 +27,7 @@
             <h2>Linear Gradients</h2>
             <p>Creates a gradient along a straight line.</p>
             <div class="code-example">
-                <code>background: linear-gradient(to right, red, blue);</code>
+                <pre><code>background: linear-gradient(to right, red, blue);</code></pre>
             </div>
             <p><strong>Direction:</strong> to right, to bottom, to top left, or degrees (45deg, 90deg)</p>
             <p><strong>Multiple colors:</strong> linear-gradient(red, yellow, green)</p>
@@ -36,7 +38,7 @@
             <h2>Color Stops</h2>
             <p>Controls where colors start and end in the gradient.</p>
             <div class="code-example">
-                <code>background: linear-gradient(red 0%, yellow 50%, green 100%);</code>
+                <pre><code>background: linear-gradient(red 0%, yellow 50%, green 100%);</code></pre>
             </div>
             <p><strong>Without stops:</strong> Colors evenly distributed</p>
             <p><strong>With stops:</strong> Precise control over transition points</p>
@@ -47,7 +49,7 @@
             <h2>Radial Gradients</h2>
             <p>Creates a gradient radiating from a center point.</p>
             <div class="code-example">
-                <code>background: radial-gradient(circle, red, blue);</code>
+                <pre><code>background: radial-gradient(circle, red, blue);</code></pre>
             </div>
             <p><strong>Shape:</strong> circle or ellipse (default)</p>
             <p><strong>Size:</strong> closest-side, farthest-side, closest-corner, farthest-corner</p>
@@ -58,7 +60,7 @@
             <h2>Repeating Gradients</h2>
             <p>Creates patterns by repeating gradients.</p>
             <div class="code-example">
-                <code>background: repeating-linear-gradient(45deg, red 0px, red 10px, blue 10px, blue 20px);</code>
+                <pre><code>background: repeating-linear-gradient(45deg, red 0px, red 10px, blue 10px, blue 20px);</code></pre>
             </div>
             <p><strong>Linear:</strong> repeating-linear-gradient()</p>
             <p><strong>Radial:</strong> repeating-radial-gradient()</p>
@@ -69,7 +71,7 @@
             <h2>Conic Gradients</h2>
             <p>Creates a gradient rotating around a center point.</p>
             <div class="code-example">
-                <code>background: conic-gradient(red, yellow, green, blue, red);</code>
+                <pre><code>background: conic-gradient(red, yellow, green, blue, red);</code></pre>
             </div>
             <p><strong>Like a pie chart:</strong> Colors rotate around the center</p>
             <p><strong>Position:</strong> from angle at position</p>
@@ -80,7 +82,7 @@
             <h2>Gradient Transparency</h2>
             <p>Combine gradients with transparency for fade effects.</p>
             <div class="code-example">
-                <code>background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));</code>
+                <pre><code>background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));</code></pre>
             </div>
             <p><strong>Use:</strong> Fade to transparent, overlay effects, image masks</p>
         </section>
@@ -89,13 +91,13 @@
             <h2>Multiple Gradients</h2>
             <p>Layer multiple gradients for complex effects.</p>
             <div class="code-example">
-                <code>background: linear-gradient(to right, transparent, white),</code><br>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linear-gradient(to bottom, blue, red);</code>
+                <pre><code>background: linear-gradient(to right, transparent, white),</code></pre>
+                <pre><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linear-gradient(to bottom, blue, red);</code></pre>
             </div>
             <p><strong>Order matters:</strong> First gradient on top</p>
             <p><strong>Use:</strong> Complex backgrounds, overlays, artistic effects</p>
         </section>
-
+        </div>
         <a href="index.html" class="back-link">← Back to Reference</a>
     </div>
 </body>

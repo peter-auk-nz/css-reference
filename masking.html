@@ -15,6 +15,8 @@
 
         <a href="index.html" class="back-link">← Back to Reference</a>
 
+        <div class="detail-grid">
+
         <section class="detail-section">
             <h2>What is CSS Masking?</h2>
             <p>CSS masking lets you hide portions of an element using shapes, gradients, or images. Unlike clipping which creates hard edges, masks can have soft transitions and complex patterns. Masks are perfect for creating non-rectangular shapes, fade effects, and artistic compositions.</p>
@@ -25,8 +27,8 @@
             <h2>mask-image</h2>
             <p>Defines the mask using an image, gradient, or SVG.</p>
             <div class="code-example">
-                <code>mask-image: url(mask.png);</code><br>
-                <code>mask-image: linear-gradient(black, transparent);</code>
+                <pre><code>mask-image: url(mask.png);</code></pre>
+                <pre><code>mask-image: linear-gradient(black, transparent);</code></pre>
             </div>
             <p><strong>Image masks:</strong> Use alpha channel or luminance to determine visibility</p>
             <p><strong>Gradient masks:</strong> Create fade effects and transitions</p>
@@ -37,8 +39,8 @@
             <h2>mask-size</h2>
             <p>Controls the size of the mask.</p>
             <div class="code-example">
-                <code>mask-size: cover;</code><br>
-                <code>mask-size: 100px 200px;</code>
+                <pre><code>mask-size: cover;</code></pre>
+                <pre><code>mask-size: 100px 200px;</code></pre>
             </div>
             <p><strong>Values:</strong> cover, contain, auto, or specific dimensions</p>
             <p><strong>Like background-size:</strong> Same sizing options</p>
@@ -48,8 +50,8 @@
             <h2>mask-position</h2>
             <p>Positions the mask within the element.</p>
             <div class="code-example">
-                <code>mask-position: center;</code><br>
-                <code>mask-position: top right;</code>
+                <pre><code>mask-position: center;</code></pre>
+                <pre><code>mask-position: top right;</code></pre>
             </div>
             <p><strong>Keywords:</strong> top, bottom, left, right, center</p>
             <p><strong>Values:</strong> Percentages or lengths (50% 50%, 10px 20px)</p>
@@ -59,8 +61,8 @@
             <h2>mask-repeat</h2>
             <p>Controls whether the mask repeats.</p>
             <div class="code-example">
-                <code>mask-repeat: no-repeat;</code><br>
-                <code>mask-repeat: repeat;</code>
+                <pre><code>mask-repeat: no-repeat;</code></pre>
+                <pre><code>mask-repeat: repeat;</code></pre>
             </div>
             <p><strong>Values:</strong> repeat, no-repeat, repeat-x, repeat-y, space, round</p>
             <p><strong>Like background-repeat:</strong> Same repetition options</p>
@@ -70,8 +72,8 @@
             <h2>mask-mode</h2>
             <p>Determines how the mask is calculated.</p>
             <div class="code-example">
-                <code>mask-mode: alpha;</code><br>
-                <code>mask-mode: luminance;</code>
+                <pre><code>mask-mode: alpha;</code></pre>
+                <pre><code>mask-mode: luminance;</code></pre>
             </div>
             <p><strong>alpha:</strong> Uses transparency channel</p>
             <p><strong>luminance:</strong> Uses brightness of colors (black/white)</p>
@@ -82,7 +84,7 @@
             <h2>mask Shorthand</h2>
             <p>Combines multiple mask properties.</p>
             <div class="code-example">
-                <code>mask: url(mask.png) center/cover no-repeat;</code>
+                <pre><code>mask: url(mask.png) center/cover no-repeat;</code></pre>
             </div>
             <p><strong>Syntax:</strong> image position/size repeat</p>
             <p><strong>Like background shorthand:</strong> Same pattern</p>
@@ -92,10 +94,10 @@
             <h2>Gradient Masks</h2>
             <p>Create fade effects using gradients as masks.</p>
             <div class="code-example">
-                <code>/* Fade from top */</code><br>
-                <code>mask-image: linear-gradient(to bottom, black, transparent);</code><br><br>
-                <code>/* Circular fade */</code><br>
-                <code>mask-image: radial-gradient(circle, black 50%, transparent);</code>
+                <pre><code>/* Fade from top */</code></pre>
+                <pre><code>mask-image: linear-gradient(to bottom, black, transparent);</code></pre>
+                <pre><code>/* Circular fade */</code></pre>
+                <pre><code>mask-image: radial-gradient(circle, black 50%, transparent);</code></pre>
             </div>
             <p><strong>Use:</strong> Image fades, vignettes, spotlight effects</p>
         </section>
@@ -104,8 +106,8 @@
             <h2>Multiple Masks</h2>
             <p>Combine multiple masks for complex effects.</p>
             <div class="code-example">
-                <code>mask-image: url(mask1.png), url(mask2.png);</code><br>
-                <code>mask-composite: add;</code>
+                <pre><code>mask-image: url(mask1.png), url(mask2.png);</code></pre>
+                <pre><code>mask-composite: add;</code></pre>
             </div>
             <p><strong>mask-composite:</strong> Determines how masks combine</p>
             <p><strong>Values:</strong> add, subtract, intersect, exclude</p>
@@ -115,10 +117,10 @@
             <h2>clip-path vs mask</h2>
             <p>Understanding the difference between clipping and masking.</p>
             <div class="code-example">
-                <code>/* Hard edges */</code><br>
-                <code>clip-path: circle(50%);</code><br><br>
-                <code>/* Soft edges possible */</code><br>
-                <code>mask-image: radial-gradient(circle, black, transparent);</code>
+                <pre><code>/* Hard edges */</code></pre>
+                <pre><code>clip-path: circle(50%);</code></pre>
+                <pre><code>/* Soft edges possible */</code></pre>
+                <pre><code>mask-image: radial-gradient(circle, black, transparent);</code></pre>
             </div>
             <p><strong>clip-path:</strong> Hard edges, geometric shapes, better performance</p>
             <p><strong>mask:</strong> Soft edges, gradients, complex patterns, more flexible</p>
@@ -130,12 +132,12 @@
             <h2>Browser Prefixes</h2>
             <p>Webkit prefix often needed for mask properties.</p>
             <div class="code-example">
-                <code>-webkit-mask-image: url(mask.png);</code><br>
-                <code>mask-image: url(mask.png);</code>
+                <pre><code>-webkit-mask-image: url(mask.png);</code></pre>
+                <pre><code>mask-image: url(mask.png);</code></pre>
             </div>
             <p><strong>Note:</strong> Include -webkit- prefix for better browser support</p>
         </section>
-
+        </div>
         <a href="index.html" class="back-link">← Back to Reference</a>
     </div>
 </body>

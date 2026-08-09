@@ -15,6 +15,8 @@
 
         <a href="index.html" class="back-link">← Back to Reference</a>
 
+        <div class="detail-grid">
+
         <section class="detail-section">
             <h2>What are 2D Transforms?</h2>
             <p>2D transforms let you manipulate elements in two-dimensional space. You can rotate, scale, move, and skew elements without affecting the document flow. Perfect for animations, hover effects, and creative layouts.</p>
@@ -25,7 +27,7 @@
             <h2>rotate()</h2>
             <p>Rotates an element around a fixed point.</p>
             <div class="code-example">
-                <code>transform: rotate(45deg);</code>
+                <pre><code>transform: rotate(45deg);</code></pre>
             </div>
             <p><strong>Values:</strong> Degrees (deg), turns (turn), radians (rad)</p>
             <p><strong>Example:</strong> rotate(90deg) rotates 90 degrees clockwise</p>
@@ -36,8 +38,8 @@
             <h2>scale()</h2>
             <p>Increases or decreases element size.</p>
             <div class="code-example">
-                <code>transform: scale(1.5);</code><br>
-                <code>transform: scale(2, 0.5);</code>
+                <pre><code>transform: scale(1.5);</code></pre>
+                <pre><code>transform: scale(2, 0.5);</code></pre>
             </div>
             <p><strong>One value:</strong> Scales both width and height equally</p>
             <p><strong>Two values:</strong> scale(x, y) - horizontal and vertical separately</p>
@@ -48,7 +50,7 @@
             <h2>translate()</h2>
             <p>Moves an element from its current position.</p>
             <div class="code-example">
-                <code>transform: translate(50px, 100px);</code>
+                <pre><code>transform: translate(50px, 100px);</code></pre>
             </div>
             <p><strong>Values:</strong> translate(x, y)</p>
             <p><strong>Example:</strong> translate(50px, 100px) moves 50px right, 100px down</p>
@@ -60,7 +62,7 @@
             <h2>skew()</h2>
             <p>Tilts an element along the X or Y axis.</p>
             <div class="code-example">
-                <code>transform: skew(20deg, 10deg);</code>
+                <pre><code>transform: skew(20deg, 10deg);</code></pre>
             </div>
             <p><strong>Values:</strong> skew(x-angle, y-angle)</p>
             <p><strong>Example:</strong> skew(20deg) tilts horizontally</p>
@@ -71,8 +73,8 @@
             <h2>transform-origin</h2>
             <p>Sets the point around which transformations occur.</p>
             <div class="code-example">
-                <code>transform-origin: center center;</code><br>
-                <code>transform-origin: top left;</code>
+                <pre><code>transform-origin: center center;</code></pre>
+                <pre><code>transform-origin: top left;</code></pre>
             </div>
             <p><strong>Default:</strong> center center (50% 50%)</p>
             <p><strong>Values:</strong> Keywords (top, bottom, left, right, center) or percentages/pixels</p>
@@ -83,13 +85,14 @@
             <h2>Multiple Transforms</h2>
             <p>Combine multiple transform functions in one declaration.</p>
             <div class="code-example">
-                <code>transform: rotate(45deg) scale(1.5) translate(50px, 0);</code>
+                <pre><code>transform: rotate(45deg) scale(1.5) translate(50px, 0);</code></pre>
             </div>
             <p><strong>Order matters:</strong> Functions apply from right to left</p>
             <p><strong>Example:</strong> Element is first translated, then scaled, then rotated</p>
         </section>
+        </div>
 
         <a href="index.html" class="back-link">← Back to Reference</a>
-    </div>
+   
 </body>
 </html>

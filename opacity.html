@@ -15,6 +15,8 @@
 
         <a href="index.html" class="back-link">← Back to Reference</a>
 
+        <div class="detail-grid">
+
         <section class="detail-section">
             <h2>What is Opacity?</h2>
             <p>Opacity controls how transparent or opaque an element appears. It affects the entire element, including all its children and content. Values range from 0 (fully transparent) to 1 (fully opaque). Opacity is perfect for overlays, hover effects, and creating depth in designs.</p>
@@ -25,7 +27,7 @@
             <h2>opacity Property</h2>
             <p>Sets the transparency level of an element.</p>
             <div class="code-example">
-                <code>.element { opacity: 0.5; }</code>
+                <pre><code>.element { opacity: 0.5; }</code></pre>
             </div>
             <p><strong>Values:</strong> 0 to 1 (0 = invisible, 1 = fully visible)</p>
             <p><strong>Example:</strong> opacity: 0.5 makes element 50% transparent</p>
@@ -36,10 +38,10 @@
             <h2>Common Opacity Values</h2>
             <p>Standard opacity settings for different effects.</p>
             <div class="code-example">
-                <code>opacity: 1; /* Fully opaque (default) */</code><br>
-                <code>opacity: 0.8; /* Slightly transparent */</code><br>
-                <code>opacity: 0.5; /* Half transparent */</code><br>
-                <code>opacity: 0; /* Fully transparent (invisible) */</code>
+                <pre><code>opacity: 1; /* Fully opaque (default) */</code></pre>
+                <pre><code>opacity: 0.8; /* Slightly transparent */</code></pre>
+                <pre><code>opacity: 0.5; /* Half transparent */</code></pre>
+                <pre><code>opacity: 0; /* Fully transparent (invisible) */</code></pre>
             </div>
             <p><strong>Tip:</strong> Use 0.7-0.9 for subtle transparency, 0.3-0.5 for overlays</p>
         </section>
@@ -48,10 +50,10 @@
             <h2>Opacity vs RGBA</h2>
             <p>Two ways to create transparency with different behaviors.</p>
             <div class="code-example">
-                <code>/* Opacity - affects entire element */</code><br>
-                <code>.box { opacity: 0.5; }</code><br><br>
-                <code>/* RGBA - affects only background */</code><br>
-                <code>.box { background: rgba(255, 0, 0, 0.5); }</code>
+                <pre><code>/* Opacity - affects entire element */</code></pre>
+                <pre><code>.box { opacity: 0.5; }</code></pre>
+                <pre><code>/* RGBA - affects only background */</code></pre>
+                <pre><code>.box { background: rgba(255, 0, 0, 0.5); }</code></pre>
             </div>
             <p><strong>Opacity:</strong> Makes element AND children transparent</p>
             <p><strong>RGBA:</strong> Only background transparent, text stays opaque</p>
@@ -62,8 +64,8 @@
             <h2>Hover Effects</h2>
             <p>Common use case for opacity in interactive elements.</p>
             <div class="code-example">
-                <code>.image { opacity: 1; transition: opacity 0.3s; }</code><br>
-                <code>.image:hover { opacity: 0.7; }</code>
+                <pre><code>.image { opacity: 1; transition: opacity 0.3s; }</code></pre>
+                <pre><code>.image:hover { opacity: 0.7; }</code></pre>
             </div>
             <p><strong>Pattern:</strong> Full opacity normally, reduce on hover for feedback</p>
             <p><strong>Transition:</strong> Smooth animation between states</p>
@@ -73,7 +75,7 @@
             <h2>Overlays</h2>
             <p>Create overlay effects for images and backgrounds.</p>
             <div class="code-example">
-                <code>.overlay { background: black; opacity: 0.5; }</code>
+                <pre><code>.overlay { background: black; opacity: 0.5; }</code></pre>
             </div>
             <p><strong>Pattern:</strong> Dark or colored layer over content</p>
             <p><strong>Use:</strong> Improve text readability over images, create dramatic effects</p>
@@ -84,10 +86,10 @@
             <h2>Fade Animations</h2>
             <p>Animate opacity for fade in/out effects.</p>
             <div class="code-example">
-                <code>@keyframes fadeIn {</code><br>
-                <code>&nbsp;&nbsp;from { opacity: 0; }</code><br>
-                <code>&nbsp;&nbsp;to { opacity: 1; }</code><br>
-                <code>}</code>
+                <pre><code>@keyframes fadeIn {</code></pre>
+                <pre><code>&nbsp;&nbsp;from { opacity: 0; }</code></pre>
+                <pre><code>&nbsp;&nbsp;to { opacity: 1; }</code></pre>
+                <pre><code>}</code></pre>
             </div>
             <p><strong>Use:</strong> Loading screens, modal appearances, content reveals</p>
         </section>
@@ -96,7 +98,7 @@
             <h2>Disabled States</h2>
             <p>Visual indicator for disabled or inactive elements.</p>
             <div class="code-example">
-                <code>button:disabled { opacity: 0.4; cursor: not-allowed; }</code>
+                <pre><code>button:disabled { opacity: 0.4; cursor: not-allowed; }</code></pre>
             </div>
             <p><strong>Pattern:</strong> Reduce opacity to show element is not interactive</p>
             <p><strong>Common value:</strong> 0.4-0.6 for disabled states</p>
@@ -106,13 +108,13 @@
             <h2>Performance Considerations</h2>
             <p>Opacity is hardware-accelerated and performant.</p>
             <div class="code-example">
-                <code>/* Performant animation */</code><br>
-                <code>.element { transition: opacity 0.3s; }</code>
+                <pre><code>/* Performant animation */</code></pre>
+                <pre><code>.element { transition: opacity 0.3s; }</code></pre>
             </div>
             <p><strong>Advantage:</strong> Animating opacity doesn't trigger layout recalculations</p>
             <p><strong>Combine with:</strong> transform for smooth, performant animations</p>
         </section>
-
+        </div> <!-- End of detail-grid -->
         <a href="index.html" class="back-link">← Back to Reference</a>
     </div>
 </body>
