@@ -40,6 +40,13 @@ header p {
     row-rule: 2px solid #667eea; /* Added row rule for visual separation */
 }
 
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    column-rule: 2px solid #667eea; /* Added column rule for visual separation */
+}
+  
 /* Card Styling */
 .card {
     background-color: white;
