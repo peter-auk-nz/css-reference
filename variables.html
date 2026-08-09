@@ -7,13 +7,89 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>CSS Variables</h1>
-    </header>
-    <p>Coming soon - detailed guide to CSS Variables.</p>
-    <a href="index.html" class="back-link">← Back to Reference</a>
-</body>
-</html>
+    <div class="container">
+        <header>
+            <h1>CSS Variables</h1>
+            <p>Store and reuse values throughout your stylesheet</p>
+        </header>
+        
+        <a href="index.html" class="back-link">← Back to Reference</a>
+
+        <div class="detail-grid">
+
+        <section class="detail-section">
+            <h2>Defining CSS Variables?</h2>
+            <p>Variables are defined with two dashes and are usually placedin :root so they are avaliable globally.</p>
+        <div class="code-example">
+                <pre><code>:root {
+                --primary-color: #667eea;
+                --font-size: 1rem;
+                --spacing: 1.5rem;
+        }</code></pre>
+        </div>
+            <p><strong>:root</strong> — targets the highest-level HTML element and makes the variables available throughout the entire document.</p>
+            <p><strong>--name</strong> — all custom properties start with two dashes --</p>
+        </section>
+
+        <section class="detail-section">
+            <h2>Using Variables</h2>
+            <p>Use the var() function to apply a variable's value to a CSS property</p>
+        <div class="code-example">
+                <pre><code>body {
+                    background: var(--primary-color);
+                    font-size: var(--font-size);
+                    padding: var(--spacing);
+        }</code></pre>
+        </div>
+            <p><strong>var()</strong> — retrieves the value of a custom property</p>
+            <p><strong>Fallback:</strong> var(--color, blue) uses blue if --coloris not defined</p>
+        </section>
+        
+        <section class="detail-section">
+            <h2>Scope</h2>
+            <p>Variables can be global or scoped to a specific element and its children.</p>
+        <div class="code-example">
+                <pre><code>/* Global variable */
+        :root {
+    --color: blue;
+    }
+
+    .card {
+        --color: green; /* Scoped variable */
+        background: var(--color);
+    }</code></pre>
+    </div>
+            <p><strong>Global</strong> — defined in :root and available throughout the document</p>
+            <p><strong>Scoped</strong> — defined within a specific selector and only available to that selector and its children</p>
+            <p><strong>.card</strong> — will be green, everything else will be blue</p>
+        </section>
+
+        <section class="detail-section">
+            <h2>Dynamic Updates</h2>
+            <p>Variables can be updated dynamically using JavaScript, updating all elements that use them instantly.</p>
+        <div class="code-example">
+                <pre><code>document.documentElement.style.setProperty('--primary-color', 'red');</code></pre>
+            </div>
+                <p><strong>document.documentElement</strong> — refers to the root element of the document</p>
+                <p><strong>style.setProperty()</strong> — updates the value of a CSS variable</p>
+                <p><strong>Result:</strong>Everyelement using --primary-color updates instantly</p>
+        </section>
+
+        <section class="detail-section">
+            <h2>Why use variables?</h2>
+            <p>CSS Variables make stylesheets easier to maintain, theme , and update.</p>
+            <div class="code-example">
+                <pre><code>:root {
+    --primary-color: #667eea; 
+    }</code></pre> /* change the primary color in one place and it updates everywhere */
+    </div>
+            <p><strong>Consistency:</strong> — one source of truth for colors and values</p>
+            <p><strong>Theming</strong> — dark mode and light mode switching</p>
+            <p><strong>Maintainability</strong> — change a variable, update the whole site</p>
+        </section>
+
+        <a href="index.html" class="back-link">← Back to Reference</a>
+    </div>
 
     <footer>
         <p>Made with 💙 by Atom Peter and Atom Claude ⚛️</p>
